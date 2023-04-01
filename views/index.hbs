@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/forget-pass.css">
+</head>
+<body>
+	<div class="login-container">
+		<div class="login-header">
+			<h2>Login</h2>
+		</div>
+		<div class="login-body">
+			<form action="" method="POST">
+				<label for="username">Username</label>
+				<input type="text" name="username" required>
+
+				<label for="password">Password</label>
+				<input type="password" name="password" required>
+
+				<div class="login-options">
+					<button type="submit">Login</button>
+					<a href="forgetpass.hbs" class="forget-pass-link" id="forget-password-link">Forgot Password?</a>
+				</div>
+			</form>
+			<p>Don't have an account? <a href="#">Sign up</a></p>
+		</div>
+	</div>
+	<script src="js/login.js"></script>
+</body>
+	

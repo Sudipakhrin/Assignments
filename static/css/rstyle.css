@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    padding-right: 30px; /* new code */
+     border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    position: relative;
+
+}
+#password-reveal-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    left: 58%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+#password-reveal-btn:before {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 18px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    transform: rotate(-45deg);
+}
+
+#password-reveal-btn:after {
+    content: "";
+    display: block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+#password-reveal-btn.active:before {
+    transform: rotate(45deg);
+}
+
+
+
+
+#password-strength {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+#password-strength span {
+    font-weight: bold;
+}
+#password-strength span.weak {
+    color: red;
+    }
+    
+    #password-strength span.medium {
+    color: orange;
+    }
+    
+    #password-strength span.strong {
+    color: green;
+    }
+    
+    
+    .captcha {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    }
+    
+    .captcha img {
+    margin-right: 0.5rem;
+    }
+    
+    .captcha input {
+    width: 60%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    }
+    
+    .captcha button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    }
+    
+    .captcha button:hover {
+    background-color: #006C9E;
+    }
+    

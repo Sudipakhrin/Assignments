@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google reCAPTCHA v2 API script -->
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+    <!-- Registration page styles -->
+    <link rel="stylesheet" type="text/css" href="css/rstyle.css">
+</head>
+<body>
+    <div class="container">
+        <form id="register-form">
+            <h1>Register</h1>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+           <div class="form-group">
+             <label for="password">Password:</label>
+             <input type="password" id="password" name="password" required>
+             <button type="button" id="password-reveal-btn" onclick="togglePasswordVisibility()"></button>
+             <div id="password-strength">Password Strength: <span>Very Weak</span></div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div id="recaptcha-wrapper">
+                <div class="g-recaptcha" data-sitekey="6LcwUT4lAAAAAMb6jnZGHbfMzc2i8b2kS9kC70_0" data-callback="onSubmit" data-expired-callback="onExpired" data-error-callback="onError"></div>
+                {{!-- <div id="recaptcha-error"></div> --}}
+                <label for="g-recaptcha-response">Please verify that you are not a robot.</label>
+            </div>
+            <button type="submit" id="submit-btn ">Register</button>
+
+        </form>
+    </div>
+    <!-- Registration page scripts -->
+    <script src="js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</body>
+</html>

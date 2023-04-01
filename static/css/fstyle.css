@@ -1,0 +1,80 @@
+/* Body styles */
+body {
+	background-color: #F4F4F4;
+}
+
+/* Forgot password container styles */
+.forgot-pass-container {
+	max-width: 400px;
+	margin: auto;
+	padding: 20px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+/* Forgot password header styles */
+.forgot-pass-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.forgot-pass-header h2 {
+	font-size: 30px;
+	color: #2F2F2F;
+}
+
+/* Forgot password body styles */
+.forgot-pass-body form {
+	display: flex;
+	flex-direction: column;
+}
+
+.forgot-pass-body label {
+	font-size: 16px;
+	font-weight: 500;
+	color: #2F2F2F;
+	margin-bottom: 10px;
+}
+
+.forgot-pass-body input {
+	padding: 10px;
+	border: none;
+	background-color: #F4F4F4;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.forgot-pass-body button {
+	padding: 10px;
+	border: none;
+	background-color: #2F2F2F;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.forgot-pass-body button:hover {
+	background-color: #000000;
+}
+
+.forgot-pass-body p {
+	font-size: 14px;
+	color: #2F2F2F;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.forgot-pass-body a {
+	color: #2F2F2F;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+.forgot-pass-body a:hover {
+	color: #000000;
+}
