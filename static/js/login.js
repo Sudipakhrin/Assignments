@@ -2,10 +2,9 @@ const express = require("express");
 const app = express();
 
 app.get("/forgetpass", (req, res) => {
-  res.render("forgetpass"); // assumes "forgetpass.hbs" is in your views directory
+  res.render("forgetpass"); 
 });
 
-// rest of your server code here
 
 
 const forgetPasswordLink = document.getElementById("forget-password-link");
